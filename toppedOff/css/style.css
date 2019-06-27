@@ -1,0 +1,543 @@
+*{
+    font-family: 'Varela Round', sans-serif;  
+}
+
+body{
+    font-size: 18px;
+}
+
+
+/* ===================== Botão Collpase Início ============================ */
+
+.fa-bars:before {
+    content: "\f0c9";
+    display: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: white;
+}
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.2em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+/* ===================== Botão Collpase Fim ============================ */
+
+/* ======================== Menu mudar de cor ============================= */
+
+.fixed-top.scrolled {
+    background-color: black;
+    transition: background-color 300ms linear;
+  }
+
+/* ======================== Menu mudar de Fim ============================= */
+
+/* ======================== Banner Jacked Up Início ======================== */
+
+.banner-content{
+    background-image: url("../imagens/capa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 60, 60, 0.4);
+    background-blend-mode: multiply;
+}
+
+.banner-content h1{
+    font-size: 2.4em;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.banner-content p{
+    font-size: 0.7em;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+/* ======================== Banner Jacked Up Fim ======================== */
+
+/* ======================== Header Início ===================== */
+
+.navbar-light .navbar-brand{
+    color: white;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 3px;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+
+/* ======================== Header Fim ===================== */
+
+/* ======== Main apresentação dos produtos Início ========== */
+
+
+main .container-content-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div .image-size{
+    max-height: 170px;
+    max-width: 300px;
+}
+
+.container-fluid p{
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.container-fluid h2{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-fluid .row{
+    margin: 0;
+}
+
+/* ======== Main apresentação dos produtos Fim ========== */
+
+/* ======== We Offer rounded circle Início ============== */
+
+.offer-content{
+    padding-top: -5%;
+}
+
+.offer-content span {
+    color: #cb7152;
+    font-size: 0.8em;
+}
+
+.offer-content h2{
+    margin: 0;
+}
+
+section div h3{
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+section .offer-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.offer-content .rounded-circle{
+    width: 65%;
+}
+
+/* ======== We Offer rounded circle Fim ============== */
+
+/* ======== Cardápio do site Início ================== */
+
+.offer-content .cardapio-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sub-color{
+    color: #cb7152;
+}
+
+
+div h4{
+    font-size: 0.8em;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+div span{
+    font-size: 0.5em;
+    text-align: center;
+
+}
+
+/* ======== Cardápio do site Fim ================== */
+
+/* ======== Footer Início ========================= */
+
+footer.row{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content{
+    background-color: #23282F;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+footer h2{
+    font-size: 1.2em;
+    color: #CB9252;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+footer p{
+    font-size: 0.7em;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+footer h4{
+    font-size: 1.1em;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+form.row{
+    margin: 0;
+    padding: 0;
+}
+
+.subscribe-content{
+    width: 100%;
+}
+
+.email-offers{
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-footer{
+    color: #C66F51;
+    font-size: 1.3em;
+    padding-bottom: 25px;
+}
+
+/* ======== Footer Início ========================= */
+
+/* @media only screen and (min-width: 390px) {
+    .banner-content{
+        background-image: url("../imagens/capa.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+    .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+
+    main .container-content-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -106px;
+    }
+
+    .offer-content .rounded-circle{
+        width: 50%;
+    }
+
+    main div .image-size{
+        max-height: 180px;
+        max-width: 300px;
+    }
+
+    .position-desktop {
+        margin-bottom: -65px;
+    }
+
+} */
+
+
+/* @media only screen and (min-width: 576px) { */
+      
+/* Banner Início */
+
+/* .banner-content {
+    background-image: url(../imagens/capa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+ 
+.banner-content h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.banner-content p{
+    font-size: 1em;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+} */
+
+
+/* Banner Fim */
+
+/* Header Início */
+
+/* header span{
+    color: black;
+    font-size: 1em;
+    padding-top: 1%;
+    text-transform: lowercase;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 5px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    font-size: 0.8em;
+    font-weight: lighter;
+} */
+
+  /* Header Fim */
+
+  /* main div .image-size{
+    max-height: 250px;
+    max-width: 300px;
+}
+
+.offer-content .rounded-circle{
+    width: 70%;
+}
+
+footer h2{
+    margin-bottom: -10px;
+}
+
+} */
+
+/* @media only screen and (min-width: 650px) { */
+      
+    /* Banner Início */
+    
+    /* .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6.5%;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px){ */
+
+    /* Banner Início */
+    
+    /* .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5.5%;
+    }
+
+    .container-fluid h2 {
+        font-size: 1.6em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    section div h3 {
+        text-align: center;
+        font-size: 1.4em;
+        text-transform: capitalize;
+        padding-top: 10px;
+    }
+
+    .container-fluid .position-for-pc{
+        margin-bottom: -60px;
+    }
+
+}
+
+@media only screen and (min-width: 885px){ */
+
+    /* Banner Início */
+    
+    /* .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4.5%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    nav ul li a{
+        font-size: 0.9em;
+        font-weight: lighter;
+    }
+
+    .offer-content .rounded-circle{
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px){ */
+
+    /* Banner Início */
+    
+    /* .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4.3%;
+    }
+}
+
+@media only screen and (min-width: 1200px){ */
+
+    /* Banner Início */
+    
+    /* .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.7%;
+    }
+}
+
+@media only screen and (min-width: 1348px){ */
+
+    /* Banner Início */
+    
+    /* .banner-content {
+        background-image: url(../imagens/capa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.3%;
+    }
+} */
