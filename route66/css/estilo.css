@@ -1,0 +1,186 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* ============================= Menu de navegação - Início =====================================*/
+
+.navbar-light .navbar-brand {
+    color: crimson;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: darkslategray;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+/* ============================= Menu de navegação - Fim ========================================*/
+
+/* ============================= Banner Principal Início==========================================*/
+
+.background-content1 {
+    background-image: url('../imagens/1600x1200-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: tan;
+    background-blend-mode: multiply;
+}
+
+.background-content2 {
+    background-image: url('../imagens/1600x1200-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-content3 {
+    background-image: url('../imagens/1600x1200-9.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: burlywood;
+    background-blend-mode: multiply;
+}
+
+/* aumentar o tamanho da imagem */
+.banner-text{
+    height: 92vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h2{
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    padding-top: 5%;
+    font-weight: bolder;
+}
+
+
+.text {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.banner-text p{
+    text-align: center;
+    color: white;
+    padding: 0 15%;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* Dots */
+
+.dots-container{
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: -3%;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+.fadein {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+/* ============================= Banner Principal Fim==========================================*/
+
+/* ============================= Main Content Início==========================================*/
+
+section .img-main-content{
+    background-image: url("../imagens/1600x1200-4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border:1px solid white;
+}
+
+section .img-main-content .text-effect-content{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%
+}
+
+section .img-main-content .text-effect-content:hover{
+    background-color: rgba(182, 51, 39, 0.7);
+}
+
+section .img-main-content .text-effect-content h3{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+section .img-main-content .text-effect-content p{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
