@@ -37,7 +37,7 @@ header nav ul {
 /* ============================= Banner Principal Início==========================================*/
 
 .background-content1 {
-    background-image: url('../imagens/1600x1200-1.jpg');
+    background-image: url('../imagens/Switzerland.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -151,36 +151,130 @@ header nav ul {
 /* ============================= Main Content Início==========================================*/
 
 section .img-main-content{
-    background-image: url("../imagens/1600x1200-4.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 350px;
+    position: relative;
+    /* border:1px solid white; */
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.75);
+}
+
+section .img-main-content .caption{
+    position: absolute;
     width: 100%;
+    z-index: 2;
+    bottom: 0;
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* ========================== Main COntent Fim =============================================== */
+
+/* ========================== Why Choose us Início ============================================ */
+
+section .choose-content{
+    background-image: url(../imagens/Switzerland.jpg);
+    height: 400px;
+    background-attachment: fixed;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-flow: row;
+    justify-content: center;
     align-items: center;
-    border:1px solid white;
 }
 
-section .img-main-content .text-effect-content{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%
-}
 
-section .img-main-content .text-effect-content:hover{
-    background-color: rgba(182, 51, 39, 0.7);
-}
-
-section .img-main-content .text-effect-content h3{
-    font-size: 1.5em;
-    color: white;
+section .choose-content h3{
     text-align: center;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: bolder;
+    width: 100%;
 }
 
-section .img-main-content .text-effect-content p{
-    color: white;
+section .choose-content p{
     text-align: center;
-    font-size: 1em;
+    font-size: 1.0em;
+    width: 100%;
+}
+
+/* ========================== Why Choose us Fim ==============================================  */
+
+/* ========================== Galeria Início Início ==========================================  */
+
+.gallery-content{
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-content .gallery-caption{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    bottom: 0;
+    padding: 2%;
+}
+
+.gallery-content .gallery-caption button {
+    background: crimson;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    border: 0;
+    border-radius: 50px;
+}
+
+.gallery-content .gallery-caption button:hover{
+    background-color: black;
+}
+
+/* Modal Início */
+
+.modal {
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background-image: url(../imagens/praga1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20% auto;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    height: 50%;
+    width: 80%;
+    position: relative;
+}
+
+/* Modal Fim */
+
+.closeBtn{
+    color: black;
+    float: right;
+    font-size: 30px;
+    position: absolute;
+    padding-left: 2%;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ========================== Galeria Fim ==========================================  */
+
+/* Footer */
+footer{
+    background-color: black;
+    margin-top: 3%;
+}
+
+footer div{
+    color: #fff;
 }

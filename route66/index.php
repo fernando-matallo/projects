@@ -1,3 +1,12 @@
+<?php
+    $produtosHome = [
+      "Paris" => ["Paris", "Compre passagens com ótimos preços", "paris.jpg"],
+      "Roma" => ["Roma", "Compre passagens com ótimos preços", "roma.jpg"],
+      "Praga" => ["Praga", "Compre passagens com ótimos preços", "praga.jpg"]
+    ];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +62,7 @@
     <article class="slide-fade fade-in">
         <div class="background-content1">
             <div class="banner-text">
-            <h2 class="text">Venice</h2>
+            <h2 class="text">Switzerland</h2>
             <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cupiditate quae nobis, earum placeat.</p>
             </div>
         </div>
@@ -93,15 +102,71 @@
     </section>
 
     <section class="row">
+        <?php foreach ($produtosHome as $cidade => $infos) { ?>
         <div class="img-main-content p-0 col-12 col-lg-4">
-            <div class="text-effect-content">
-            <p class="m-0">text</p>
-            <h3>Title</h3>
+        <div class="caption">
+        <p class="m-0"><?php echo$infos [1] ?></p>
+        <h3><?php echo$infos [0] ?></h3>
+        </div>
+        <img class="img-fluid" src="imagens/<?php echo$infos [2]; ?>" alt="">
+        </div>
+        <?php } ?>
+    </section>
+
+    <section>
+        <h1 class="text-center mt-5">Why Choose US</h1>
+        <p class="text-center mb-3">CHECK OUT OUR BEST PROMOTION TOURS</p>
+    </section>
+
+    <section class="row pt-5">
+        <div class="col-12 choose-content">
+            <div class="col-lg-4 white-color">
+            <h3>Text</h3>
+            <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
+            <div class="col-lg-4 white-color">
+            <h3>Text</h3>
+            <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+            </div>
+            <div class="col-lg-4 white-color">
+            <h3>Text</h3>
+            <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section>
+        <h1 class="text-center mt-5">Gallery</h1>
+        <p class="text-center mb-3">CHECK OUT OUR BEST PROMOTION TOURS</p>
+    </section>
+
+    <div class="row">
+        <div class="gallery-content">
+            <div class="gallery-caption text-center col-md-4">
+            <button id="modal-btn" class="button">See Image</button>
+            </div>
+            <img src="imagens/paris.jpg" alt="picture" class="col-md-4 img-fluid">
+        </div>
         </div>
 
+        
+        
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <img src="imagens/amsterdam.jpg" alt="" class="img-fluid img-thumbnail">
+        </div>
+    </div>
 
-    </section>
+
+<footer class="page-footer">
+
+  <div class="footer-copyright text-center py-3">© 2019 Route66</div>
+
+</footer>
+
     
     
 </body>
