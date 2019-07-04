@@ -5,6 +5,12 @@
       "Praga" => ["Praga", "Compre passagens com ótimos preços", "praga.jpg"]
     ];
 
+    $galeria = [
+        "Instambul" => ["instambul.jpg", "Instambul"],
+        "Londres" => ["london.jpg", "Londres"],
+        "Madrid" => ["madrid.jpg", "Madrid" ]
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -24,28 +30,20 @@
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- aplicado o navbar expand sm e navbar light para aparecer o toggle na versão mobile -->
-    <!-- Incluindo o navbar o header acerta o functionamento do collapse -->
-    <!-- Alinhando os items centralizado -->
+
     <header class="container-fluid navbar navbar-expand-sm navbar-light row align-items-center m-0">
-        <!-- Incluindo col-4 para fixar o tamanho -->
+
         <span class="col-4">
             <a class="navbar-brand" href="#">Route 66</a>
         </span>
-
-        <!-- Toggle para navegação mobile -->  
+  
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#naveffect"
         aria-controls="navbarNav" aria-expanded ="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
 
-        <!-- navbar collpase que faz aparecer e desaparecer o menu -->
-        <!-- retirei col-8 para fizer o tamnaho do colapse ficar no centro-->
         <nav class="text-center navbar-collapse collapse" id="naveffect">
 
-        <!-- inserido navbarnav na ul aumentando seu tamanho e flex para posicionar -->
-        <!-- FICOU FALTANDO POSICIONAR AS CATEGORIAS NO COLLAPSE -->
-       
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
@@ -54,8 +52,6 @@
             </ul>     
         </nav>
     </header>
-
-    <!-- Banner Principal com Slider -->
 
     <section id="slide-show-container">
 
@@ -120,15 +116,15 @@
 
     <section class="row pt-5">
         <div class="col-12 choose-content">
-            <div class="col-lg-4 white-color">
+            <div class="col-lg-4">
             <h3>Text</h3>
             <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
-            <div class="col-lg-4 white-color">
+            <div class="col-lg-4">
             <h3>Text</h3>
             <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
-            <div class="col-lg-4 white-color">
+            <div class="col-lg-4">
             <h3>Text</h3>
             <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
@@ -142,23 +138,25 @@
         <p class="text-center mb-3">CHECK OUT OUR BEST PROMOTION TOURS</p>
     </section>
 
-    <div class="row">
-        <div class="gallery-content">
-            <div class="gallery-caption text-center col-md-4">
-            <button id="modal-btn" class="button">See Image</button>
+    <div class="container-fluid">
+        <div class="gallery-content row">
+        <?php foreach ($galeria as $propPais => $propValor) { ?>
+            <div class="d-flex flex-column col-lg-4">
+            <img src="imagens/<?php echo$propValor[0]; ?>" alt="" class="img-fluid">
+            <button id="modal-btn" class="button">Check it out <?php echo$propValor[1]; ?></button>
             </div>
-            <img src="imagens/paris.jpg" alt="picture" class="col-md-4 img-fluid">
+        <?php } ?>
         </div>
-        </div>
+    </div>
 
-        
-        
+    <?php foreach ($galeria as $propPais => $propValor) { ?>
     <div id="simpleModal" class="modal">
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
-            <img src="imagens/amsterdam.jpg" alt="" class="img-fluid img-thumbnail">
+            <img src="imagens/<?php echo$propValor[0]; ?>" alt="" class="img-fluid img-thumbnail">
         </div>
     </div>
+    <?php } ?>
 
 
 <footer class="page-footer">
