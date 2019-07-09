@@ -269,10 +269,10 @@ section .choose-content{
 
 /* Footer */
 footer{
-    background-color: black;
+    background-color:#fff;
     margin-top: 3%;
 }
 
 footer div{
-    color: #fff;
+    color: crimson;
 }

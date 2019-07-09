@@ -1,0 +1,43 @@
+*{
+    font-family: 'Rasa', serif;
+}
+
+body{
+    font-size: 18px;
+}
+
+/* Título Principal Início */
+
+section h1{
+    text-align: center;
+}
+
+section p{
+    text-align: center;
+}
+
+/* Título Principal Fim */
+
+/* Galeria Início */
+
+section div h2{
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 4px;
+}
+
+section div p{
+    font-size: 1.2em;
+    margin-bottom: inherit;
+}
+
+section div button{
+    border-radius: 50px;
+    border: none;
+    color: yellow;
+    background-color: black;
+    padding: 3px 40px;
+}
+
+/* Galeria Fim */
