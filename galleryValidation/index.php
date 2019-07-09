@@ -38,11 +38,12 @@
     </header>
 
         <section>
-        <h1>Buy Masterpiece - Cutting Edge</h1>
+        <h1>Gallery - Cutting Edge</h1>
         <p>Lorem ipsum dolor sit amet, perferendis pariatur, sunt facilis veniam error quisquam reprehenderit expedita ratione.</p>
         </section>
 
-        <section class="container-fluid row">
+        <section class="container-fluid">
+            <div class="row">
             <?php foreach ($gallery as $key => $value) { ?>
             <div class="col-lg-3 d-flex flex-column align-items-center">
                 <img src="img/<?php echo $value[1];    ?>" alt="" class="img-fluid">
@@ -51,6 +52,7 @@
                 <button class="mb-5" type="button" data-toggle="modal" data-target="#modalType">Buy</button>
             </div>
             <?php } ?>
+            </div>
         </section>
             <?php foreach ($gallery as $key => $value) { ?> 
                 <div class="modal fade" id="modalType" role="dialog">
