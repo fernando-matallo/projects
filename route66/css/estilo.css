@@ -7,10 +7,9 @@
 
 .navbar-light .navbar-brand {
     color: crimson;
-    font-size: 1.6em;
+    font-size: 1.1em;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: 'Shadows Into Light', cursive;
     letter-spacing: 2px;
 }
 
@@ -21,10 +20,21 @@ header nav ul {
     width: 100%;
 }
 
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.0em;
+    height: 1.0em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: darkslategray;
     font-weight: lighter;
     letter-spacing: 3px;
+    font-size: 0.9em;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -70,10 +80,10 @@ header nav ul {
     justify-content: center;
 }
 
-.banner-text h2{
+.banner-text h2 {
     text-align: center;
     color: white;
-    font-size: 3.5em;
+    font-size: 1.5em;
     text-transform: uppercase;
     padding-top: 5%;
     font-weight: bolder;
@@ -95,26 +105,26 @@ header nav ul {
 }
 
 
-.banner-text p{
+.banner-text p {
     text-align: center;
     color: white;
     padding: 0 15%;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 /* Dots */
 
-.dots-container{
+.dots-container {
     text-align: center;
     width: 100%;
     z-index: 2;
-    margin-top: -3%;
+    margin-top: -10%;
 }
 
-.dot{
-    height: 15px;
-    width: 15px;
+.dot {
+    height: 10px;
+    width: 10px;
     display: inline-block;
     background-color: white;
     border-radius: 50%;
@@ -171,16 +181,42 @@ section .img-main-content .caption{
     background-color: rgba(0,0,0,0.5);
 }
 
+.caption h3{
+    font-size: 1.5em;
+}
+
+.caption p{
+    font-size: 1.0em;
+}
+
+section h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section h1 p{
+    font-size: 0.8em;
+}
+
 /* ========================== Main COntent Fim =============================================== */
 
 /* ========================== Why Choose us Início ============================================ */
 
+section h2{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section h2 p{
+    font-size: 0.8em;
+}
+
 section .choose-content{
     background-image: url(../imagens/Switzerland.jpg);
-    height: 400px;
+    height: 450px;
     background-attachment: fixed;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     background-color: #717171;
@@ -189,7 +225,7 @@ section .choose-content{
 
 .choose-content div h3{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bolder;
     width: 100%;
     color: white;
@@ -198,7 +234,7 @@ section .choose-content{
 
 .choose-content div p{
     text-align: center;
-    font-size: 1.0em;
+    font-size: 0.9em;
     width: 100%;
     color: white;
     padding: 0 20px;

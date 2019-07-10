@@ -1,8 +1,8 @@
 <?php
     $produtosHome = [
-      "Paris" => ["Paris", "Compre passagens com ótimos preços", "paris.jpg"],
-      "Roma" => ["Roma", "Compre passagens com ótimos preços", "roma.jpg"],
-      "Praga" => ["Praga", "Compre passagens com ótimos preços", "praga.jpg"]
+      "Paris" => ["Paris", "Buy tickets from Paris", "paris.jpg"],
+      "Roma" => ["Roma", "Buy tickets from Rome", "roma.jpg"],
+      "Praga" => ["Prague", "Buy tickets from Prague", "praga.jpg"]
     ];
 
     $galeria = [
@@ -93,11 +93,12 @@
     <!-- Conteúdo principal do site -->
 
     <section>
-        <h1 class="text-center mt-5">Route 66 - Tour Guides in Europe</h1>
+        <h1 class="text-center mt-4">Route 66 - Tour Guides in Europe</h1>
         <p class="text-center mb-3">CHECK OUT OUR BEST PROMOTION TOURS</p>
     </section>
-
-    <section class="row">
+    
+    <section class="container-fluid">
+    <div class="row">
         <?php foreach ($produtosHome as $cidade => $infos) { ?>
         <div class="img-main-content p-0 col-12 col-lg-4">
         <div class="caption">
@@ -107,34 +108,35 @@
         <img class="img-fluid" src="imagens/<?php echo$infos [2]; ?>" alt="">
         </div>
         <?php } ?>
+    </div>
     </section>
 
     <section>
-        <h1 class="text-center mt-5">Why Choose US</h1>
+        <h2 class="text-center mt-4">Why Choose US</h2>
         <p class="text-center mb-3">CHECK OUT OUR BEST PROMOTION TOURS</p>
     </section>
 
-    <section class="row pt-5">
+    <section class="container-fluid">
+    <div class="row">
         <div class="col-12 choose-content">
-            <div class="col-lg-4">
+            <div>
             <h3>Text</h3>
             <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
-            <div class="col-lg-4">
+            <div>
             <h3>Text</h3>
             <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
-            <div class="col-lg-4">
+            <div>
             <h3>Text</h3>
             <p>Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
             </div>
-
-            
         </div>
+    </div>
     </section>
 
     <section>
-        <h1 class="text-center mt-5">Gallery</h1>
+        <h2 class="text-center mt-3">Gallery</h2>
         <p class="text-center mb-3">CHECK OUT OUR BEST PROMOTION TOURS</p>
     </section>
 
@@ -161,7 +163,7 @@
 
 <footer class="page-footer">
 
-  <div class="footer-copyright text-center py-3">© 2019 Route66</div>
+  <div class="footer-copyright text-center pt-2 pb-2">© 2019 Route66</div>
 
 </footer>
 
