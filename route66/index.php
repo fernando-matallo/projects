@@ -143,16 +143,16 @@
         <?php foreach ($galeria as $propPais => $propValor) { ?>
             <div class="d-flex flex-column col-lg-4">
             <img src="imagens/<?php echo$propValor[0]; ?>" alt="" class="img-fluid">
-            <button id="modal-btn" class="button">Check it out <?php echo$propValor[1]; ?></button>
+            <button class="modal-btn button" onclick="openModal(this)" data-target="#modal-<?= $propPais; ?>" >Check it out <?php echo$propValor[1]; ?></button>
             </div>
         <?php } ?>
         </div>
     </div>
 
     <?php foreach ($galeria as $propPais => $propValor) { ?>
-    <div id="simpleModal" class="modal">
+    <div class="modal simpleModal" id="modal-<?= $propPais; ?>">
         <div class="modal-content">
-            <span class="closeBtn">&times;</span>
+            <span onclick="closeModal(this)" class="closeBtn" data-target="<?= $propPais; ?>">&times;</span>
             <img src="imagens/<?php echo$propValor[0]; ?>" alt="" class="img-fluid img-thumbnail">
         </div>
     </div>

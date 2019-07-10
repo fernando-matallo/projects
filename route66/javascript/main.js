@@ -35,32 +35,36 @@ window.onload = function (){
 
 // Modal 
 
-var modal = document.getElementById ('simpleModal');
+var modal = document.querySelectorAll('.simpleModal');
 
-var modalBtn = document.getElementById('modal-btn');
+var modalBtn = document.querySelector('.modal-btn');
 
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
+var closeBtn = document.getElementsByClassName('closeBtn');
 
 
-modalBtn.addEventListener('click', openModal);
+// function openModal(elemento){
+//     var item = elemento.getAttribute('data-target');
 
-closeBtn.addEventListener('click', closeModal);
+//     var modal = document.querySelector(item);
 
-window.addEventListener('click', outsideClick);
+//     modal.style.display = "block";
+// }
 
-function openModal (){
-    modal.style.display = 'block';
-}
+// function closeModal (element) {
+//     var itemClose = element.getAttribute('data-target');
 
-function closeModal (){
-    modal.style.display = 'none';
-}
+//     var closeBtn = document.querySelector(element);
 
-function outsideClick (e){
-    if(e.target == modal){
-    modal.style.display = 'none';
-    }
-}
+//     modal.style.display = 'none';
+// }
+
+
+// window.onclick = function (event){
+//     if(event.target==modal){
+//         modal.style.display = 'none';
+//     }
+// }
+
 
 
 

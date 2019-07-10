@@ -229,24 +229,27 @@ section .choose-content{
 
 .modal {
     position: fixed;
-    z-index: 6;
+    z-index: 1;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
+    display: none;
 }
 
 .modal-content{
-    background-image: url(../imagens/praga1.jpg);
+    /* background-image: url(../imagens/praga1.jpg); */
+    background-color: #fefefe;
     background-size: cover;
     background-position: center;
-    margin: 20% auto;
+    margin: 15% auto;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
-    height: 50%;
+    /* height: 50%; */
     width: 80%;
-    position: relative;
+    /* position: relative; */
+    border: 1px solid #888888;
 }
 
 /* Modal Fim */
@@ -255,8 +258,9 @@ section .choose-content{
     color: black;
     float: right;
     font-size: 30px;
-    position: absolute;
+    /* position: absolute; */
     padding-left: 2%;
+    font-weight: bold;
 }
 
 .closeBtn:hover,.closeBtn:focus{
