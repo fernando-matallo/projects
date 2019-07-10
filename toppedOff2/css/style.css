@@ -125,6 +125,7 @@ main .container-content-mobile{
 main div .image-size{
     max-height: 170px;
     max-width: 300px;
+    margin-bottom: 15px;
 }
 
 .container-fluid p{
@@ -148,9 +149,6 @@ main div .image-size{
 
 /* ======== We Offer rounded circle Início ============== */
 
-.offer-content{
-    padding-top: -5%;
-}
 
 .offer-content span {
     color: #cb7152;
@@ -158,7 +156,7 @@ main div .image-size{
 }
 
 .offer-content h2{
-    margin: 0;
+    margin: 8px 0 0 0;
 }
 
 section div h3{
@@ -265,176 +263,75 @@ form.row{
     padding-bottom: 25px;
 }
 
-/* ======== Footer Início ========================= */
+/* ======== Footer Fim ========================= */
 
-/* @media only screen and (min-width: 390px) {
-    .banner-content{
-        background-image: url("../imagens/capa.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-    }
-
-}
-
-@media only screen and (min-width: 480px) {
-
-    .banner-content {
-        background-image: url(../imagens/capa.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 8%;
-    }
-
-
-    main .container-content-mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: -106px;
-    }
-
+@media only screen and (min-width: 370px ){
     .offer-content .rounded-circle{
         width: 50%;
     }
+}
+
+@media only screen and (min-width: 480px ){
+    .navbar-light .navbar-brand {
+        color: white;
+        font-size: 0.9em;
+        text-transform: lowercase;
+        font-family: 'Libre Baskerville', serif;
+        letter-spacing: 3px;
+    }
+
+    .container-fluid h2 {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .offer-content .rounded-circle{
+        width: 40%;
+    }
 
     main div .image-size{
-        max-height: 180px;
+        max-height: 200px;
         max-width: 300px;
+        margin-bottom: 15px;
     }
 
-    .position-desktop {
-        margin-bottom: -65px;
+    section div h3 {
+        text-align: center;
+        font-size: 1.3em;
+        text-transform: capitalize;
+        padding-top: 10px;
+
+}
+
+@media only screen and (min-width: 576px ){
+
+    main div .image-size{
+        max-height: 200px;
+        max-width: 250px;
+        margin-bottom: 15px;
     }
 
-} */
-
-
-/* @media only screen and (min-width: 576px) { */
-      
-/* Banner Início */
-
-/* .banner-content {
-    background-image: url(../imagens/capa.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8%;
-}
- 
-.banner-content h1{
-    font-size: 3em;
-    color: white;
-    font-family: 'Kaushan Script', cursive;
-    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    .offer-content .rounded-circle{
+        width: 70%;
+    }
 }
 
-.banner-content p{
-    font-size: 1em;
-    color: white;
-    font-family: 'Kaushan Script', cursive;
-    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-} */
-
-
-/* Banner Fim */
-
-/* Header Início */
-
-/* header span{
-    color: black;
-    font-size: 1em;
-    padding-top: 1%;
-    text-transform: lowercase;
-    font-family: 'Libre Baskerville', serif;
-    letter-spacing: 5px;
-}
-
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-}
-
-nav ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul li a{
-    font-size: 0.8em;
-    font-weight: lighter;
-} */
-
-  /* Header Fim */
-
-  /* main div .image-size{
-    max-height: 250px;
-    max-width: 300px;
-}
-
-.offer-content .rounded-circle{
-    width: 70%;
-}
-
-footer h2{
-    margin-bottom: -10px;
-}
-
-} */
-
-/* @media only screen and (min-width: 650px) { */
-      
-    /* Banner Início */
-    
-    /* .banner-content {
-        background-image: url(../imagens/capa.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 6.5%;
+@media only screen and (min-width: 639px ){
+    main div .image-size{
+        max-height: 225px;
+        max-width: 250px;
+        margin-bottom: 15px;
     }
 
-
 }
 
-@media only screen and (min-width: 768px){ */
+@media only screen and (min-width: 720px ){
 
-    /* Banner Início */
-    
-    /* .banner-content {
-        background-image: url(../imagens/capa.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5.5%;
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.7em;
     }
 
     .container-fluid h2 {
@@ -443,101 +340,126 @@ footer h2{
         font-weight: bold;
     }
 
-    section div h3 {
-        text-align: center;
-        font-size: 1.4em;
-        text-transform: capitalize;
-        padding-top: 10px;
+    .offer-content .rounded-circle{
+        width: 60%;
     }
 
-    .container-fluid .position-for-pc{
-        margin-bottom: -60px;
+    footer h2{
+        padding-bottom: 5px;
     }
 
 }
 
-@media only screen and (min-width: 885px){ */
+@media only screen and (min-width: 788px){
 
-    /* Banner Início */
-    
-    /* .banner-content {
-        background-image: url(../imagens/capa.jpg);
+    .banner-content{
+        background-image: url("../imagens/capa.jpg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        height: 75vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 4.5%;
+        background-color: rgba(60, 60, 60, 0.4);
+        background-blend-mode: multiply;
+    }
+
+    .offer-content .rounded-circle{
+        width: 55%;
+    }
+
+    .cupEffect{
+        margin-top: -104px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .container-fluid h2 {
+        font-size: 1.6em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .container-fluid p {
+        color: black;
+        font-size: 0.8em;
+        text-align: center;
+        padding: 0 0 2% 0;
     }
 
 }
 
-@media only screen and (min-width: 992px) {
-    nav ul li a{
+@media only screen and (min-width: 992px){
+    main .container-content-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -30px;
+    }
+
+    .offer-content {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .offer-content .rounded-circle{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1204px){
+    .navbar-light .navbar-brand {
+        color: white;
+        font-size: 1.2em;
+        text-transform: lowercase;
+        font-family: 'Libre Baskerville', serif;
+        letter-spacing: 3px;
+    }
+
+    .container-fluid p {
+        color: black;
         font-size: 0.9em;
-        font-weight: lighter;
+        text-align: center;
+        padding: 0 0 2% 0;
     }
 
     .offer-content .rounded-circle{
         width: 80%;
     }
 
-
-}
-
-@media only screen and (min-width: 1024px){ */
-
-    /* Banner Início */
-    
-    /* .banner-content {
-        background-image: url(../imagens/capa.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 4.3%;
+    footer .footerText {
+        padding-right: 10%;
+        padding-left: 10%;
     }
 }
 
-@media only screen and (min-width: 1200px){ */
-
-    /* Banner Início */
-    
-    /* .banner-content {
-        background-image: url(../imagens/capa.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3.7%;
+@media only screen and (min-width: 1400px){
+    .navbar-light .navbar-brand {
+        color: white;
+        font-size: 1.1em;
+        text-transform: lowercase;
+        font-family: 'Libre Baskerville', serif;
+        letter-spacing: 3px;
     }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+
+    .container-fluid h2 {
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .offer-content .rounded-circle{
+        width: 72%;
+    }
+
+
 }
-
-@media only screen and (min-width: 1348px){ */
-
-    /* Banner Início */
-    
-    /* .banner-content {
-        background-image: url(../imagens/capa.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3.3%;
-    }
-} */
