@@ -6,6 +6,12 @@ body{
     font-size: 18px;
 }
 
+.navTeste {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+
 /* Título Principal Início */
 
 section h1{
@@ -41,3 +47,43 @@ section div button{
 }
 
 /* Galeria Fim */
+
+.flip-container {
+	perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+	top: 0;
+	left: 0;
+  }
+  
+  .text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+  }
+
+  

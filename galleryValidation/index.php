@@ -26,19 +26,23 @@
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid row flex-row justify-content-around">
-        <span class="col-4 logo">Cutting Edge</span>
-        <nav class="navbar nav">
-            <ul class="d-flex flex-row col-8 list-unstyled">
+    <header class="container-fluid">
+        <div class="row justify-content-around align-items-center">
+        <span class="logo">Cutting Edge</span>
+        <nav class="navbar nav w-50 ">
+
+            <ul class="navTeste list-unstyled m-0 w-100">
                 <li class=""><a href="">Home</a></li>
                 <li class=""><a href="">Gallery</a></li>
                 <li class=""><a href="">Contact</a></li>
             </ul>
+
         </nav>
+        </div>
     </header>
 
         <section>
-        <h1>Gallery - Cutting Edge</h1>
+        <h1>Gallery</h1>
         <p>Lorem ipsum dolor sit amet, perferendis pariatur, sunt facilis veniam error quisquam reprehenderit expedita ratione.</p>
         </section>
 
@@ -46,10 +50,21 @@
             <div class="row">
             <?php foreach ($gallery as $key => $value) { ?>
             <div class="col-lg-3 d-flex flex-column align-items-center">
-                <img src="img/<?php echo $value[1];    ?>" alt="" class="img-fluid">
+                <div class="flip-container">
+                <div class="flipper">
+                <img src="img/<?php echo $value[1];    ?>" alt="" class="img-fluid flip-card-front">
+                <div class="flip-card-back">
+                <div class="text-box">
+                <h2>Fernando Matallo</h2> 
+                <p>Front End Jr</p> 
+                </div>
+                </div>
+                </div>
+                </div>
                 <h2><?php echo $value[0];?></h2>
                 <p> <?php echo $value[2];?> </p>
                 <button class="mb-5" type="button" data-toggle="modal" data-target="#modalType">Buy</button>
+                
             </div>
             <?php } ?>
             </div>
