@@ -1,0 +1,213 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+/* ================================ Header Início ============================ */
+header{
+    background: dodgerblue;
+}
+
+.navbar-brand{
+    width: 50%;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+    letter-spacing: 7px;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: khaki;
+}
+
+section ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ================================ Carrossel Início ============================ */
+
+.carousel-item{
+    height: 80vh;
+}
+
+/* ================================ Ícone Início ================================ */
+
+.icon-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-cocktail{
+    color: dodgerblue;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.fa-concierge-bell{
+    color: dodgerblue;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.fa-dice{
+    color: dodgerblue;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.fa-car{
+    color: dodgerblue;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+i:hover{
+    color: khaki;
+}
+/* ================================ Produtos Início ============================ */
+
+section h2{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+span{
+    font-size: 0.8em;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+section h3{
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.fa-star{
+    font-size: 0.5em;
+    color: #b69100;
+}
+
+.product-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    transition: transform .2s;
+}
+
+.product-content:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button-product{
+    color: #000;
+    border: 2px solid rgba(0,0,0,.1);
+    background: white;
+    padding: 0 20px;
+    font-size: 0.8em;
+}
+
+.product-content h3{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-content p{
+    color: #b69100;
+}
+
+.image-product-1{
+    background-image: url('../img/hotelproduct1.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.image-product-2{
+    background-image: url('../img/hotelproduct2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.image-product-3{
+    background-image: url('../img/hotelproduct3.PNG');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.image-product-4{
+    background-image: url('../img/hotelproduct4.PNG');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/* ================================ Benefícios Início ============================ */
+
+.back-content{
+    background-image: url('../img/chill.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    height: 250x;
+}
+
+.back-text{
+    font-size: 1em;
+    padding: 100px 20px;
+    color: white;
+}
+
+.caixa{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+}
+
+/* ================================ Galerias Início ============================ */
+
+.galeria-imagem{
+    cursor: pointer;
+    padding: 0;
+}
+
+/* ================================ Footer Início ============================ */
+
+.footer-content{
+    background: dodgerblue;
+    font-size: 0.8em;
+}
+
+footer h4{
+    padding: 10px 0 0 0;
+    font-size: 1em;
+}
+
+footer ul li a{
+    color: white;
+}
+
+footer ul li a:hover{
+    color: khaki;
+}
